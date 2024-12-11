@@ -7,43 +7,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
   <header class="header">
-    <div class="container">
-        <img  src="Logo.png" alt="картинка">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">Меню</a></li>
-                <li><a href="#reviews">О нас</a></li>
-                <li><a href="#contact">Банкетный зал</a></li>
-                <li><a href="#contact">Галарея</a></li>
-                <li><a href="#contact">Афиша</a></li>
-                <li><a href="#contact">Акции</a></li>
-                <li><a href="#contact">Контакты</a></li>
-                <li><a class="number"   href="#contact">+7 989 295-00-00</a></li>
-                <button class="button">заказать столик</button>
-            </ul>
-        </nav>
+    <div class="hop">
+      <img src="Logo.png" alt="">
     </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Банкетный зал</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Афиша</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">+7 989 295-00-00</a></li>
+            <a href="recuest.html"><button>Заказать столик</button></a>
+        </ul>
+    </nav>
 </header>
+
 <main>
-  <section class="hero">
-    <img class="hero-video"  src="image1.jpg" alt="">
-    <div class="hero-content">
+  <div class="background">
+    <div class="content">
       <img src="logotip.png" alt="">
-        <h2 class="video-h2">Пожалуй, самый уютный ресторан в городе</h2>
-        <p class="video-h2">Непревзойденная атмосфера</p>
-        <p class="video-h2">Сочные блюда от шеф повара</p>
-        <p class="video-h2">Хорошее настроение</p>
-        <div class="position">
-          <button class="button">заказать столик</button>
-        </div>
-        <div class="position">
-          <button class="button-other">заказать доставку</button>
-        </div>
-        
-        
+        <h1>Сеть уютных ресторанов
+          в Краснодаре.</h1>
+        <p>Непревзойденная атмосфера
+          Сочные блюда от шеф-повара
+          Живая музыка каждый вечер
+          Детская комната</p>
+          <a href="recuest.html"><button>Заказать столик</button></a>
+          <a href="recuest.html"><button class="button-other">заказать доставку</button></a>
+          
     </div>
-</section>
+</div>
 
 <div class="contacts">
   <div class="contacts-io">
@@ -82,7 +81,7 @@
         <img src="logo4.png" alt="">
         <h2>Меню</h2>
         <p>Огромный выбор блюд кавказской, европейской, русской и азиатской кухни - придется по вкусу даже самым требовательным гурманам!</p>
-        <button>Заказать столик</button>
+        <a href="recuest.html"><button>Заказать столик</button></a>
 
 
       </div>
@@ -101,7 +100,7 @@
         <img src="logo2.png" alt="">
         <h2>ДЖЕНТЛЬМЕНЫ НА ТУРГЕНЕВА</h2>
         <p>ОНайдите свой любимый столик в ресторане Джентльмены Удачи на Тургенева - 3 тематических этажа, детская игровая, панорамное остекление, живая музыка, пивной и кальян-бары, уединенные VIP-комнаты для мероприятий и роскошный банкетный зал</p>
-        <button>Заказать столик</button>
+        <a href="recuest.html"><button>Заказать столик</button></a>
 
 
       </div>
@@ -126,7 +125,7 @@
         <img src="logo3.png" alt="">
         <h2>Банкетные залы</h2>
         <p>Планируете важное событие? Приглашаем провести его в наших современных банкетных залах вместимостью до 200 человек. У нас есть все необходимое: большая сцена, LED-экран и профессиональное свето-звуковое оборудование, первоклассное обслуживание и изысканные блюда от шефа, стильный интерьер с возможностью</p>
-        <button>Заказать столик</button>
+        <a href="recuest.html"><button>Заказать столик</button></a>
 
 
       </div>
@@ -153,21 +152,22 @@
 
 <div class="posters-container">
   <div class="poster">
-    <img src="afisha.avif" alt="">
+    <img src="afisha2.avif" alt="">
 
   </div>
   <div class="poster">
-    <img src="afisha.avif" alt="">
+    <img src="afisha.jpg" alt="">
 
   </div>
   <div class="poster">
-    <img src="afisha.avif" alt="">
+    <img src="afisha3.avif" alt="">
 
   </div>
   <div class="poster">
-    <img src="afisha.avif" alt="">
+    <img src="afisha4.avif" alt="">
 
   </div>
+  <a href="recuest.html"><button>Заказать столик</button></a>
 </div>
 
 
@@ -210,6 +210,8 @@
 
 </footer>
 
+
+        <script src="script.js"></script>
 
 </body>
 </html>
