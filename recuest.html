@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заявок</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="request-form">
+        <h2>Оставьте заявку</h2>
+        <form id="form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Ваш телефон" required>
+            <textarea placeholder="Ваш комментарий"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById('requestForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Ваша заявка отправлена!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

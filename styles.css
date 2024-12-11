@@ -1,0 +1,32 @@
+.request-form {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.request-form h2 {
+    text-align: center;
+}
+
+.request-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.request-form input, .request-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+}
+
+.request-form button {
+    border: none;
+  border-radius: 15px;
+
+  background-color: aqua;
+  color: white;
+  height: 30px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: bold;
+}
