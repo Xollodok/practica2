@@ -31,6 +31,7 @@
 }
 
 .hero-video {
+  position: relative;
   width: 100%;
   height: auto;
   filter: brightness(40%);
@@ -107,85 +108,143 @@ button {
   width: auto;
 }
 
-.menu {
+.dish-container {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.dish-image {
+  flex: 1;
+}
+
+.dish-image img {
   width: 100%;
   height: auto;
-  justify-content: space-around;
-
-  
+  border-radius: 10px;
 }
 
-.menu .image1 {
-  width: 49%;
-  height: 500px;
+.description-container {
+  flex: 1;
+  position: relative;
 }
 
-.menu .image2 {
-  width: 49%;
-  height: 500px;
-  filter: brightness(40%);
+.background-image {
+  background-image: url("fon.avif");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-
-
-.button-img {
-  position: absolute;
-  top:120%;
-  left: 40%;
+.description {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
   text-align: center;
-  width: 50%;
-  height: auto;
-  color: white;
-  font-size: 20px;
-  
- 
-  
 }
 
+.posters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
 
+.poster {
+  flex: 1 1 calc(25%);
+}
 
-.afisha {
+.map iframe {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.map {
+  margin-top: 60px;
+  position: relative;
+}
+
+.map .box-contact {
+  color: white;
+
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background-color: black;
+  width: 350px;
+  height: 350px;
+}
+
+.map .box-contact h1 {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.map .box-contact p {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-around;
-  margin-left: 200px;
-  margin-right: 200px;
-  
-}
-
-.afisha .afisha-block{
-  margin: 20px;
-}
-
-.afisha-block-gl  {
-  margin-top: 50px;
   text-align: center;
-  background-color: rgb(168, 163, 163);
 }
 
-.afisha-block-gl h1  {
+.footer .footer-io-img {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.footer .footer-io {
+  color: white;
+  margin: 50px;
+}
+
+.footer .footer-io-img img {
+  width: 30px;
+  height: 30px;
+}
+
+.gallery {
+  text-align: center;
   margin: 60px;
-  font-size: 40px;
- 
 }
 
-.afisha-block-gl button {
-  margin: 60px;
+.gallery-io {
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery img {
+  width: 450px;
+  height: 450px;
 }
 
 
+@media (max-width: 768px) {
+  .description-container {
+    flex-direction: column;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
+  .dish-image,
+  .description-container {
+    flex: none;
+    width: 100%;
+  }
+}
